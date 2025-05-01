@@ -1,0 +1,33 @@
+{
+  "instructions": "**Field Legend:**\n- ✅ Indicates a required field\n- ❓ Indicates an optional field\n- 🔹 Indicates you can add multiple items\n\n**Structure:** Define general product details first, then add each available color variant with its specific photos and sizes.",
+  "name": "t-shirt أسود",
+  "image": "src/assets/images/uploads/t-shirt-nouir-tailles-m-l-xlprix-et-qualitè-متوفر-الطباعة-على-t-shirt-1-.jpg",
+  "price": 9999,
+  "tags": [
+    "t-shirt"
+  ],
+  "variants": [
+    {
+      "color": {
+        "name": "أسود",
+        "value": "#262626"
+      },
+      "images": [
+        {
+          "image": "src/assets/images/uploads/t-shirt-nouir-tailles-m-l-xlprix-et-qualitè-متوفر-الطباعة-على-t-shirt-1-.jpg"
+        },
+        {
+          "image": "src/assets/images/uploads/t-shirt-nouir-tailles-m-l-xlprix-et-qualitè-متوفر-الطباعة-على-t-shirt-2-.jpg"
+        },
+        {
+          "image": "src/assets/images/uploads/t-shirt-nouir-tailles-m-l-xlprix-et-qualitè-متوفر-الطباعة-على-t-shirt.jpg"
+        }
+      ],
+      "available_sizes": [
+        "S",
+        "M",
+        "L"
+      ]
+    }
+  ]
+}

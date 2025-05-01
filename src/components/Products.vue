@@ -3,11 +3,11 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M20 6H4V4h16zm-4.31 8H14v1.69c-.63.95-1 2.08-1 3.31c0 .34.04.67.09 1H4v-6H3v-2l1-5h16l1 5v1.35c-.63-.22-1.3-.35-2-.35c-1.23 0-2.36.37-3.31 1M12 14H6v4h6zm9.34 1.84l-3.59 3.59l-1.59-1.59L15 19l2.75 3l4.75-4.75z" />
             </svg>
-            Nos Produits :
+            منتجاتنا :
         </h1>
 
-        <SelectNav :items="tags" select-all-label="tout"
-        @select="e => {selectedTag = e}" />
+        <SelectNav :items="tags" select-all-label="الكل"
+    @select="e => {selectedTag = e}" />
         
         <section :class="[
                 'product-section',
@@ -22,16 +22,12 @@
             :product-images="productImages[product.id]"
             cart
         >
-        <template #description>
-            <ComputerSepcs :product="product.data" />
 
-        </template>
 
     </ProductCard>
     </section>
     <div v-if="isSection" class="center">
         <sl-button class="button" variant="neutral" size="large" href="/Produits">
-            ...Découvrir plus 
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48">
             <defs>
                 <mask id="ipSRightC0">
@@ -43,6 +39,8 @@
             </defs>
             <path fill="white" d="M0 0h48v48H0z" mask="url(#ipSRightC0)" />
             </svg>
+            المزيد من المنتجات...
+
             
         </sl-button>
     </div>
@@ -134,12 +132,15 @@ console.log(props.products);
 </script>
 
 <style lang="less" scoped>
+* {
+    direction: rtl;
+}
 .margin-bottom{
     margin-bottom: 64px;
 }
 .title {
     font-size: 28px;
-    margin-left: min(5vw,32px);
+    margin-right: min(5vw,32px);
 
     display: flex;
     align-items: center;

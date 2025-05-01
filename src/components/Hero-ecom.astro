@@ -1,100 +1,132 @@
 ---
 
 const picUrl = "https://images.vexels.com/media/users/3/279696/raw/cc94a1dce8ee976085813e9f7bd2d1fe-cool-anime-boy-face-t-shirt-design.jpg"
+const title = "متجر من سينهض بالأمة"
+const subtitle = "ملابس ذات جودة لا تضاهى !"
 ---
-
+<div class="spacer"></div>
 <section id="hero" class="hero-container">
     <!-- The container now handles the image as a background -->
     <div class="hero-image-container">
         <!-- Image tag removed, it's now a background -->
     </div>
-    <h1>Welcome to our store</h1>
+    <h1 class="title">{title}</h1>
+    <h3 class="subtitle">
+        ملابس ذات<span class="underlined"> جودة </span>لا تضاهى !
+    </h3>
 </section>
 
 <style lang="less">
+    .spacer{
+        margin-top: 70px;
+        height: 10px;
+    }
+    /* Mobile - 360px */
+    @media only screen and (min-width: 0rem) {
+        .hero-container {
+
+
+            position: relative;
+            overflow: hidden;
+            
+            /* Reduced top padding to prevent pushing content down too much */
+            padding-top: 1.6em;
+            
+            position: relative;
+            z-index: 1;
+            isolation: isolate;
+            text-align: center;
+            color: white;
+            height: 300px;
+            
+            /* Remove bottom margin if it's causing spacing issues */
+            margin-bottom: 3em;
+            
+            /* Ensure this is the first element if possible */
+            margin-top: 0;
+        }
+    
         .hero-image-container {
-            background-image: url( "https://images.vexels.com/media/users/3/279696/raw/cc94a1dce8ee976085813e9f7bd2d1fe-cool-anime-boy-face-t-shirt-design.jpg");
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            
+            /* Fix the image path - use a path relative to the public directory */
+            background-image: url("../assets/images/hero.jpg");
+            background-size: 100%;
+            background-position: center top; /* Center horizontally, align to top */
+            background-repeat: no-repeat;
+
+    
+            /* Overlay for better text readability */
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.3);
+                z-index: 0;
+            }
+        }
+    
+        .hero-container .title,.hero-container .subtitle {
+            direction: rtl;
+
+            position: relative;
+            color: white;
+            z-index: 1;
+            margin: 0; /* Remove default margins */
+            padding: 0 1rem; /* Add some padding instead */
+        }
+        .hero-container .title {
+            font-size: 1.7rem;
+        }
+        .hero-container .subtitle {
+            font-size: 1.25rem;
 
         }
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    .hero-container {
-        display: grid;
-        place-items: center;
-        position: relative;
-        overflow: hidden;
-
-        padding-top: clamp(6.5rem, 12.95vw, 8.75rem);
-
-        position: relative; // Good for positioning child elements if needed
-        z-index: 1;
-        isolation: isolate;
-        text-align: center; // Center the h1
-        color: white; // Example text color for visibility against image
-        height: 300px; // Adjusted initial height
-
-        margin-bottom: 3em;
-
+        .underlined{
+            display:inline-block;
+            padding:0 10px;
+            border-bottom: 3px solid currentColor;
+        }
     }
-
-    .hero-image-container {
-        position: absolute; // Position behind the text
-        top: 0;bottom: 0;
-        margin: auto;
-        width: 100%;
-        z-index: 0; // Place it behind the h1 content
-        // border: 4px solid red; // Removed border, or keep for debugging
-
-        /* Apply the image as a background */
-        background-size: cover; // Cover the container area
-        background-position: center top; // Position the image (adjust as needed)
-        background-repeat: no-repeat;
-        /* No parallax effect on mobile by default */
-        background-attachment: scroll; // Default behavior
-
-         /* Optional: Add an overlay for text readability */
-        &::before {
-             content: '';
-             position: absolute;
-             top: 0;
-             left: 0;
-             width: 100%;
-             height: 100%;
-             background-color: rgba(0, 0, 0, 0.3); // Dark semi-transparent overlay
-             z-index: 0;
-         }
+    
+    /* Tablet - 768px */
+    @media only screen and (min-width: 48rem) {
+        .hero-container {
+            height: 300px;
+            padding-bottom: 0; /* Remove bottom padding */
+        }
+    
+        .hero-image-container {
+            background-attachment: fixed; /* Parallax effect on larger screens */
+        }
+    
+        .hero-container .title {
+            font-size: 3.5rem;
+        }
+        .hero-container .subtitle {
+            font-size: 1.5rem;
+        }
     }
-
-    .hero-container h1 {
-        position: relative; // Ensure h1 is above the pseudo-element overlay
-        color: white;
-        z-index: 1;
-        font-size: 2rem; // Example size
-        margin-bottom: 2em;
-
+    
+    /* Desktop - 1024px and above */
+    @media only screen and (min-width: 64rem) {
+        .hero-container {
+            height: 364px; /* Taller on desktop */
+        }
+        
+        .hero-container .title {
+            font-size: 4.5rem; /* Larger text on desktop */
+        }
+        .hero-container .subtitle {
+            font-size: 2.5rem;
+        }
     }
-}
-
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-    .hero-container {
-         padding-bottom: 4rem; // More space on tablet
-         height: 400px; // Increase height for tablet
-
-    }
-    .hero-image-container {
-        width: 100%; // Often full width looks better with parallax
-
-        /* --- PARALLAX EFFECT --- */
-        /* Make the background fixed relative to the viewport */
-        background-attachment: fixed;
-
-        /* Adjust position if needed - 'fixed' positioning often requires careful consideration
-           of where the image is anchored visually */
-        background-position: center center; // Center might work better with fixed attachment
-    }
-
-     .hero-container h1 {
-         font-size: 3.5rem; // Larger text on tablet
-     }
-}
+    </style>

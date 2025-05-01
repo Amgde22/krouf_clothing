@@ -1,0 +1,31 @@
+{
+  "instructions": "**Field Legend:**\n- ✅ Indicates a required field\n- ❓ Indicates an optional field\n- 🔹 Indicates you can add multiple items\n\n**Structure:** Define general product details first, then add each available color variant with its specific photos and sizes.",
+  "name": "T-shirt أخضر",
+  "description": "",
+  "image": "src/assets/images/uploads/t-shirt-nouirprix-et-qualitè-متوفر-الطباعة-على-t-shirtاوصيل-مجاني-58-ولاية-1-.jpg",
+  "price": 9999,
+  "tags": [
+    "t-shirt"
+  ],
+  "variants": [
+    {
+      "color": {
+        "name": "أخضر",
+        "value": "#3ec644"
+      },
+      "available_sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "images": [
+        {
+          "image": "src/assets/images/uploads/t-shirt-nouirprix-et-qualitè-متوفر-الطباعة-على-t-shirtاوصيل-مجاني-58-ولاية-1-.jpg"
+        },
+        {
+          "image": "src/assets/images/uploads/t-shirt-nouirprix-et-qualitè-متوفر-الطباعة-على-t-shirtاوصيل-مجاني-58-ولاية-2-.jpg"
+        }
+      ]
+    }
+  ]
+}

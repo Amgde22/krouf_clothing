@@ -23,60 +23,8 @@ const {mapLink} = client.address
     </div>
     <div class="right-section">
       <div class="lists">
-        <ul>
-          <li>
-            <h2>Information</h2>
-          </li>
-          {
-            navData.map((entry) => (
-              <li class="cs-li">
-                <a href={entry.url}>
-                  {entry.key}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-        <ul>
-          <li>
-            <h2>Services</h2>
-          </li>
-          <li>Optimisation Système
 
-          </li>
-          <li>Consultation Info
 
-          </li>
-          <li>Vente Matériel
-
-          </li>
-          <li>Réparation PC
-
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h2>Contact</h2>
-          </li>
-          <li>
-            <a href={mapLink}>
-              {client.address.lineOne}<br />
-              {client.address.lineTwo}<br />
-              {client.address.city}
-              {client.address.state}
-              {client.address.zip}
-            </a>
-          </li>
-          <li>
-            <a href={`tel:${client.phoneForTel}`}>
-              T:
-              {client.phoneFormatted}
-            </a>
-          </li>
-          <li>
-            <a href={`mailto:${client.email}`}>Click to Email</a>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
@@ -95,7 +43,7 @@ const {mapLink} = client.address
   #footer {
     font-size: ~"min(4vw, 1.2em)";
     padding: (84/16rem) 0 (20/16rem);
-    background: #1c1c1c;
+    background: #000000;
 
     .left-section {
       text-align: center;
@@ -340,7 +288,7 @@ const {mapLink} = client.address
 }
 
 .logo{
-  filter: grayscale(1) brightness(1000%);
+
 
 }
 

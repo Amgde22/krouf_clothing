@@ -16,11 +16,11 @@ const googleMapsLink = data.address.mapLink
 const showCart = true
 const showNav = true
 
-// const ctaButton = "تفضل بزيارتنا"
-const ctaButton = "Visitez-nous!"
+const ctaButton = "تواصل معنا"
+// const ctaButton = "Visitez-nous!"
 
-// const contactButton = "تواصل معنا"
-const contactButton = "Besoin d'Aide ?"
+const contactButton = "تواصل معنا"
+// const contactButton = "Besoin d'Aide ?"
 
 
 
@@ -42,100 +42,12 @@ const contactButton = "Besoin d'Aide ?"
 
 
 
-    <AmButton
-    href={googleMapsLink}
-    classes="me-auto"  fontSize="1.2em" collapse>
-      <Icon class={"flex-0"} name="mdi--location" size={25}  />
-      <span class="header-cta-button">
-        {ctaButton}
-      </span>
-    </AmButton>
-    <!-- navbar CTA -->
-    <!-- <a href="https://www.google.com/" target="_blank" 
-    class="cs-button-solid always-active">
-    <Icon name="mdi--location" />
-    visit us today
-    </a> -->
-
     <a href={whatsappLink} target="_blank" class="cs-button-solid cs-nav-button whatsapp-bg">
       <!-- <Icon name={"mage--location-fill"} size={"35px"} /> -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M21.99 6.547a11 11 0 0 0-.103-1.282a4.3 4.3 0 0 0-.363-1.09A3.85 3.85 0 0 0 19.83 2.48a4.3 4.3 0 0 0-1.083-.362a11 11 0 0 0-1.292-.105c-.183-.007-.42-.01-.53-.01L7.077 2c-.11 0-.347.003-.53.01a11 11 0 0 0-1.282.103a4.3 4.3 0 0 0-1.09.363A3.85 3.85 0 0 0 2.48 4.17a4.3 4.3 0 0 0-.362 1.083a11 11 0 0 0-.106 1.292c-.006.183-.01.42-.01.53L2 16.923c0 .11.003.347.01.53a11 11 0 0 0 .103 1.282a4.3 4.3 0 0 0 .363 1.09A3.85 3.85 0 0 0 4.17 21.52a4.3 4.3 0 0 0 1.083.362a11 11 0 0 0 1.292.105c.183.007.42.01.53.01l9.848.002c.11 0 .347-.003.53-.01a11 11 0 0 0 1.282-.103a4.3 4.3 0 0 0 1.09-.363a3.85 3.85 0 0 0 1.696-1.694a4.3 4.3 0 0 0 .362-1.083a11 11 0 0 0 .106-1.292c.006-.183.01-.42.01-.53L22 7.077c0-.11-.003-.347-.01-.53m-9.773 12.41h-.003a7.1 7.1 0 0 1-3.407-.868l-3.78.991l1.012-3.693a7.13 7.13 0 1 1 6.178 3.57" />
-        <path fill="currentColor" d="M12.22 5.901a5.927 5.927 0 0 0-5.023 9.076l.141.224l-.599 2.186l2.243-.588l.216.128a5.9 5.9 0 0 0 3.016.826h.003A5.926 5.926 0 0 0 12.219 5.9Zm3.484 8.47a1.83 1.83 0 0 1-1.202.847a2.44 2.44 0 0 1-1.122-.07a10 10 0 0 1-1.015-.376a7.94 7.94 0 0 1-3.043-2.689a3.46 3.46 0 0 1-.728-1.842a2 2 0 0 1 .624-1.485a.66.66 0 0 1 .475-.223c.118 0 .237 0 .341.006c.11.005.256-.042.4.306c.15.356.506 1.233.55 1.322a.33.33 0 0 1 .015.312a1.2 1.2 0 0 1-.178.297c-.09.104-.187.232-.267.312c-.09.089-.182.185-.079.363a5.4 5.4 0 0 0 .991 1.234a4.9 4.9 0 0 0 1.433.884c.178.09.282.074.386-.045s.445-.52.564-.698s.237-.148.4-.089s1.04.49 1.218.58s.297.133.341.207a1.5 1.5 0 0 1-.104.847" />
-      </svg>
-      {contactButton}
+<svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60"/><rect width="256" height="256" fill="url(#skillIconsInstagram1)" rx="60"/><path fill="#fff" d="M128.009 28c-27.158 0-30.567.119-41.233.604c-10.646.488-17.913 2.173-24.271 4.646c-6.578 2.554-12.157 5.971-17.715 11.531c-5.563 5.559-8.98 11.138-11.542 17.713c-2.48 6.36-4.167 13.63-4.646 24.271c-.477 10.667-.602 14.077-.602 41.236s.12 30.557.604 41.223c.49 10.646 2.175 17.913 4.646 24.271c2.556 6.578 5.973 12.157 11.533 17.715c5.557 5.563 11.136 8.988 17.709 11.542c6.363 2.473 13.631 4.158 24.275 4.646c10.667.485 14.073.604 41.23.604c27.161 0 30.559-.119 41.225-.604c10.646-.488 17.921-2.173 24.284-4.646c6.575-2.554 12.146-5.979 17.702-11.542c5.563-5.558 8.979-11.137 11.542-17.712c2.458-6.361 4.146-13.63 4.646-24.272c.479-10.666.604-14.066.604-41.225s-.125-30.567-.604-41.234c-.5-10.646-2.188-17.912-4.646-24.27c-2.563-6.578-5.979-12.157-11.542-17.716c-5.562-5.562-11.125-8.979-17.708-11.53c-6.375-2.474-13.646-4.16-24.292-4.647c-10.667-.485-14.063-.604-41.23-.604zm-8.971 18.021c2.663-.004 5.634 0 8.971 0c26.701 0 29.865.096 40.409.575c9.75.446 15.042 2.075 18.567 3.444c4.667 1.812 7.994 3.979 11.492 7.48c3.5 3.5 5.666 6.833 7.483 11.5c1.369 3.52 3 8.812 3.444 18.562c.479 10.542.583 13.708.583 40.396s-.104 29.855-.583 40.396c-.446 9.75-2.075 15.042-3.444 18.563c-1.812 4.667-3.983 7.99-7.483 11.488c-3.5 3.5-6.823 5.666-11.492 7.479c-3.521 1.375-8.817 3-18.567 3.446c-10.542.479-13.708.583-40.409.583c-26.702 0-29.867-.104-40.408-.583c-9.75-.45-15.042-2.079-18.57-3.448c-4.666-1.813-8-3.979-11.5-7.479s-5.666-6.825-7.483-11.494c-1.369-3.521-3-8.813-3.444-18.563c-.479-10.542-.575-13.708-.575-40.413s.096-29.854.575-40.396c.446-9.75 2.075-15.042 3.444-18.567c1.813-4.667 3.983-8 7.484-11.5s6.833-5.667 11.5-7.483c3.525-1.375 8.819-3 18.569-3.448c9.225-.417 12.8-.542 31.437-.563zm62.351 16.604c-6.625 0-12 5.37-12 11.996c0 6.625 5.375 12 12 12s12-5.375 12-12s-5.375-12-12-12zm-53.38 14.021c-28.36 0-51.354 22.994-51.354 51.355s22.994 51.344 51.354 51.344c28.361 0 51.347-22.983 51.347-51.344c0-28.36-22.988-51.355-51.349-51.355zm0 18.021c18.409 0 33.334 14.923 33.334 33.334c0 18.409-14.925 33.334-33.334 33.334s-33.333-14.925-33.333-33.334c0-18.411 14.923-33.334 33.333-33.334"/><defs><radialGradient id="skillIconsInstagram0" cx="0" cy="0" r="1" gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)" gradientUnits="userSpaceOnUse"><stop stop-color="#fd5"/><stop offset=".1" stop-color="#fd5"/><stop offset=".5" stop-color="#ff543e"/><stop offset="1" stop-color="#c837ab"/></radialGradient><radialGradient id="skillIconsInstagram1" cx="0" cy="0" r="1" gradientTransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)" gradientUnits="userSpaceOnUse"><stop stop-color="#3771c8"/><stop offset=".128" stop-color="#3771c8"/><stop offset="1" stop-color="#60f" stop-opacity="0"/></radialGradient></defs></g></svg>
+      <span>{contactButton}</span>
     </a>
-        <!--Navigation List-->
-       { showNav &&
-        <nav class="cs-nav" role="navigation">
-          <!--Mobile Nav Toggle-->
-          <button class="cs-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="cs-expanded-ul" aria-label="Toggle mobile menu.">
-            <div class="cs-box" aria-hidden="true">
-              <span class="cs-line cs-line1" aria-hidden="true"></span>
-              <span class="cs-line cs-line2" aria-hidden="true"></span>
-              <span class="cs-line cs-line3" aria-hidden="true"></span>
-            </div>
-          </button>
-          
-          <!-- If you want to use another navigation stitch and enjoy the benefits of dynamic routing, replace the .cs-ul-wrapper in the navigation stitch with this one below -->
-          <div class="cs-ul-wrapper">
-            <ul id="cs-expanded-ul" class="cs-ul">
-              {navData.map((entry) => (
-                <li
-                  class:list={[
-                    "cs-li",
-                    { "cs-dropdown": entry.children?.length > 0 },
-                  ]} 
-                >
-                  {entry.children?.length > 0 ? (
-                    // If entry has children in navData.json, create a button and a dropdown icon
-                    <button
-                    aria-expanded="false"
-                    aria-controls={`submenu-${entry.key}`}
-                      class:list={[
-                        "cs-li-link cs-dropdown-button",
-                        { "cs-active": Astro.url.pathname.includes(entry.url)},
-                      ]}
-                    >
-                      {entry.key}
-                      <Icon name="mdi--caret" class="cs-drop-icon" />
-                    </button>
-                  ) : (
-                    // If entry does not have children in navData.json, create an anchor
-                    <a
-                      href={entry.url}
-                      class:list={[
-                        "cs-li-link",
-                        { "cs-active": Astro.url.pathname === entry.url },
-                      ]}
-                      aria-current={Astro.url.pathname === entry.url ? "page" : undefined}
-                    >
-                      {entry.key}
-                    </a>
-                  )}
-                  
-                  {/* {entry.children?.length > 0 && (
-                    // If entry has children in navData.json, create a drop down menu
-                    <ul id={`submenu-${entry.key}`} class="cs-drop-ul">
-                      {entry.children.map((child) => (
-                        <li class="cs-drop-li">
-                          <a 
-                            href={child.url} 
-                            class="cs-li-link cs-drop-link"
-                            aria-current={Astro.url.pathname === child.url ? "page" : undefined}
-                          >
-                            {child.key}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  )} */}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </nav>
-        }
+
 
       {showCart && <CartToggle client:only />}
     <!--Dark Mode toggle: remove component if you don't want to enable a dark mode toggle-->
@@ -151,12 +63,20 @@ const contactButton = "Besoin d'Aide ?"
 .logo-text{
   color: white !important;
   font-size: 12px;
-
 }
+
 /*-- -------------------------- -->
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
-
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  .logo-image{
+    border-radius: 100%;
+  }
+  .cs-button-solid {
+    margin-inline-end: auto;
+  }
+}
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
   body {
@@ -165,7 +85,7 @@ const contactButton = "Besoin d'Aide ?"
     }
   }
   .header-cta-button{
-    display: none;
+
   }
   #cs-navigation {
     letter-spacing: 1px;
@@ -230,7 +150,7 @@ const contactButton = "Besoin d'Aide ?"
       width: fit-content;
       max-width: (146/16rem);
       height: 50px;
-      margin: 0 8px 0 0;
+
       /* prevents padding from affecting height and width */
       box-sizing: border-box;
       padding: 0;
@@ -240,13 +160,12 @@ const contactButton = "Besoin d'Aide ?"
       z-index: 10;
 
       img {
-        width: 100%;
         height: 100%;
         /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
         object-fit: contain;
         /* places the image to the left edge of the parent */
         object-position: left;
-        transform: scale(1.2);
+
       }
 
       .logo-text{
@@ -429,7 +348,9 @@ const contactButton = "Besoin d'Aide ?"
     }
 
     .cs-button-solid {
-      display: none;
+      span{
+        display: none;
+      }
     }
   }
 }
@@ -438,17 +359,17 @@ const contactButton = "Besoin d'Aide ?"
 @media only screen and (max-width: 63.9375rem) {
   body.dark-mode {
     #cs-navigation {
-      background-color: var(--dark);
-
-      .cs-logo {
-        /* makes it white */
-        filter: grayscale(1) brightness(1000%);
-      }
+      background-color: black;
 
       .cs-line {
         background-color: #fff;
       }
+      .cs-logo{
+        img{
+        border: 2px dashed rgba(213, 213, 213, 0.435);
 
+        }
+      }
       .cs-ul-wrapper {
         background-color: var(--medium);
       }
@@ -460,270 +381,7 @@ const contactButton = "Besoin d'Aide ?"
   }
 }
 
-/*-- -------------------------- -->
-<---     Navigation Dropdown    -->
-<--- -------------------------- -*/
 
-/* Mobile - 1023px */
-@media only screen and (max-width: 1023px) {
-  #cs-navigation {
-    .cs-dropdown {
-      color: var(--bodyTextColorWhite);
-      color: var(--headerColor);
-      position: relative;
-
-      &.cs-active {
-        .cs-drop-ul {
-          height: auto;
-          margin: (12/16rem) 0 0 0;
-          padding: (24/16rem);
-          opacity: 1;
-          visibility: visible;
-          transform: scale(1);
-        }
-
-        .cs-drop-link {
-          opacity: 1;
-        }
-
-        .cs-drop-icon {
-          transform: rotate(0);
-        }
-      }
-
-      .cs-li-link {
-        position: relative;
-        transition: opacity 0.3s;
-      }
-
-    }
-
-    .cs-drop-icon {
-      width: (15/16rem);
-      height: auto;
-      display: inline-block;
-      color: inherit;
-      transform: rotate(180deg);
-      transition: 0.3s;
-    }
-
-    .cs-drop-ul {
-      width: 100%;
-      height: 0;
-      margin: 0;
-      box-sizing: border-box;
-      padding: 0 (24/16rem) 0 (24/16rem);
-      background-color: var(--primary);
-      opacity: 0;
-      display: flex;
-      visibility: hidden;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-end;
-      gap: (12/16rem);
-      overflow: hidden;
-      transform: scale(0);
-      transition: padding 0.3s, margin 0.3s, height 0.3s, opacity 0.3s,
-        transform 0.3s, visibility 0.3s;
-      transform-origin: top right;
-    }
-
-    .cs-drop-li {
-      text-align: inherit;
-      list-style: none;
-    }
-
-    .cs-li-link {
-      &.cs-drop-link {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 2vw, 1.25rem);
-        color: #fff;
-      }
-    }
-
-    .cs-dropdown-button {
-      background-color: transparent;
-      border: none;
-      appearance: none;
-    }
-  }
-}
-
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #cs-navigation {
-    .cs-dropdown {
-      position: relative;
-      &:hover,
-      &.cs-active {
-        cursor: pointer;
-        .cs-drop-ul {
-          opacity: 1;
-          visibility: visible;
-          transform: scaleY(1);
-        }
-
-        .cs-drop-li {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    }
-
-    .cs-dropdown:has(.cs-drop-icon) {
-      display: flex;
-      align-items: center;
-      &:hover {
-        .cs-drop-icon {
-        transform: rotate(0);
-        }
-      }
-    }
-
-
-    .cs-drop-icon {
-      width: (15/16rem);
-      height: auto;
-      display: inline-block;
-      color: inherit;
-      transform: rotate(180deg);
-      transition: 0.3s;
-      
-    }
-
-    .cs-drop-ul {
-      min-width: (200/16rem);
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 16px;
-      opacity: 0;
-      border-bottom: 5px solid var(--primary);
-      visibility: hidden;
-      /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
-      // columns: 2;
-      position: absolute;
-      top: 100%;
-      z-index: -100;
-      overflow: hidden;
-      transform: scaleY(0);
-      transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
-      transform-origin: top;
-    }
-
-    .cs-drop-li {
-      font-size: (16/16rem);
-      text-decoration: none;
-      list-style: none;
-      width: 100%;
-      height: auto;
-      color: var(--bodyTextColor);
-      opacity: 0;
-      display: block;
-      transform: translateY(-10/16rem);
-      transition: opacity 0.6s, transform 0.6s;
-
-      &:nth-of-type(1) {
-        transition-delay: 0.05s;
-      }
-      &:nth-of-type(2) {
-        transition-delay: 0.1s;
-      }
-      &:nth-of-type(3) {
-        transition-delay: 0.15s;
-      }
-      &:nth-of-type(4) {
-        transition-delay: 0.2s;
-      }
-      &:nth-of-type(5) {
-        transition-delay: 0.25s;
-      }
-      &:nth-of-type(6) {
-        transition-delay: 0.3s;
-      }
-      &:nth-of-type(7) {
-        transition-delay: 0.35s;
-      }
-      &:nth-of-type(8) {
-        transition-delay: 0.4s;
-      }
-      &:nth-of-type(9) {
-        transition-delay: 0.45s;
-      }
-      &:nth-of-type(10) {
-        transition-delay: 0.5s;
-      }
-      &:nth-of-type(11) {
-        transition-delay: 0.55s;
-      }
-      &:nth-of-type(12) {
-        transition-delay: 0.6s;
-      }
-      &:nth-of-type(13) {
-        transition-delay: 0.65s;
-      }
-    }
-
-    .cs-li-link {
-      &.cs-drop-link {
-        font-size: (16/16rem);
-        line-height: 1.5em;
-        text-decoration: none;
-        white-space: nowrap;
-        width: 100%;
-        /* prevents padding from affecting height and width */
-        box-sizing: border-box;
-        padding: (12/16rem);
-        color: var(--bodyTextColor);
-        display: block;
-        transition: color 0.3s, background-color 0.3s;
-
-        &:hover {
-          background-color: #f7f7f7;
-        }
-
-        &:focus-within {
-          outline: 2px solid currentColor;
-          outline-offset: -2px;
-        }
-
-        &:before {
-          display: none;
-        }
-      }
-    }
-
-    .cs-dropdown-button {
-      background-color: transparent;
-      border: none;
-      appearance: none;
-    }
-  }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode {
-    #cs-navigation {
-      .cs-drop-ul {
-        background-color: var(--dark);
-      }
-
-      .cs-li-link {
-        &.cs-drop-link {
-          &:hover {
-            background-color: var(--medium);
-          }
-        }
-      }
-
-      .cs-drop-icon {
-        /* turns it white */
-        filter: grayscale(1) brightness(1000%);
-      }
-    }
-  }
-}
 
 /*-- -------------------------- -->
 <---     Desktop Navigation     -->
@@ -746,6 +404,10 @@ const contactButton = "Besoin d'Aide ?"
     display: flex;
     align-items: center;
 
+    .cs-button-solid {
+      margin-left: 24px;
+    }
+
     .cs-container {
       width: 100%;
       max-width: (1280/16rem);
@@ -753,7 +415,7 @@ const contactButton = "Besoin d'Aide ?"
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      gap: (24/16rem);
+
     }
 
     .cs-toggle {
@@ -761,7 +423,6 @@ const contactButton = "Besoin d'Aide ?"
     }
 
     .cs-logo {
-      width: 18.4%;
       max-width: (350/16rem);
       height: (65/16rem);
       /* margin-right auto pushes everything away from it to the right */
@@ -773,7 +434,6 @@ const contactButton = "Besoin d'Aide ?"
       z-index: 100;
 
       img {
-        width: 100%;
         height: 100%;
         /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
         object-fit: contain;
@@ -844,12 +504,12 @@ const contactButton = "Besoin d'Aide ?"
   body.dark-mode {
 
     #cs-navigation {
-      background-color: var(--dark);
+      background-color: black;
       box-shadow: none;
 
       .cs-logo {
         /* makes it turn white */
-        filter: grayscale(1) brightness(1000%);
+
       }
       .cs-nav-button{
         color: white;
@@ -867,6 +527,7 @@ const contactButton = "Besoin d'Aide ?"
 
         }
       }
+
     }
   }
 }
@@ -877,6 +538,7 @@ const contactButton = "Besoin d'Aide ?"
 .cs-nav-button{
   background-color: transparent !important;
 }
+
 
 
 </style>
